@@ -1,0 +1,77 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\platzi\\PruebaNet8_BlazorServer_AndresCueva\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\platzi\\PruebaNet8_BlazorServer_AndresCueva\\obj\\Debug\\net8.0\\compressed\\cbpfp6l2bs.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\platzi\\PruebaNet8_BlazorServer_AndresCueva\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PruebaNet8_BlazorServer_AndresCueva.styles.css",
+      "PackagePath": "staticwebassets\\PruebaNet8_BlazorServer_AndresCueva.styles.css"
+    },
+    {
+      "Id": "C:\\platzi\\PruebaNet8_BlazorServer_AndresCueva\\obj\\Debug\\net8.0\\service-worker-assets.js",
+      "PackagePath": "staticwebassets\\service-worker-assets.js"
+    },
+    {
+      "Id": "C:\\platzi\\PruebaNet8_BlazorServer_AndresCueva\\obj\\Debug\\net8.0\\service-worker\\service-worker.published.js",
+      "PackagePath": "staticwebassets\\service-worker.js"
+    },
+    {
+      "Id": "C:\\platzi\\PruebaNet8_BlazorServer_AndresCueva\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\platzi\\PruebaNet8_BlazorServer_AndresCueva\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\platzi\\PruebaNet8_BlazorServer_AndresCueva\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\platzi\\PruebaNet8_BlazorServer_AndresCueva\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\platzi\\PruebaNet8_BlazorServer_AndresCueva\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\platzi\\PruebaNet8_BlazorServer_AndresCueva\\wwwroot\\icon-512.png",
+      "PackagePath": "staticwebassets\\icon-512.png"
+    },
+    {
+      "Id": "C:\\platzi\\PruebaNet8_BlazorServer_AndresCueva\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\platzi\\PruebaNet8_BlazorServer_AndresCueva\\wwwroot\\manifest.webmanifest",
+      "PackagePath": "staticwebassets\\manifest.webmanifest"
+    },
+    {
+      "Id": "C:\\platzi\\PruebaNet8_BlazorServer_AndresCueva\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PruebaNet8_BlazorServer_AndresCueva.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.PruebaNet8_BlazorServer_AndresCueva.props",
+      "PackagePath": "build\\PruebaNet8_BlazorServer_AndresCueva.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PruebaNet8_BlazorServer_AndresCueva.props",
+      "PackagePath": "buildMultiTargeting\\PruebaNet8_BlazorServer_AndresCueva.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.PruebaNet8_BlazorServer_AndresCueva.props",
+      "PackagePath": "buildTransitive\\PruebaNet8_BlazorServer_AndresCueva.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

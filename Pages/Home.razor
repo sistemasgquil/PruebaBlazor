@@ -1,0 +1,47 @@
+﻿@page "/"
+@using Data
+@inject IEmpleadoService empleadoservice
+
+<PageTitle>Home</PageTitle>
+
+<h1>Buenos dias, mi nombre es Andres Cueva envio el codigo de la prueba de Blazor!</h1>
+<br />
+<p>Envio la prueba aplicando para el puesto de <b>sistemas</b> / programador.</p>
+@Message
+<br />
+<div>
+    <a href="/empleadospage"><i>Añadir Empleado+</i></a>
+</div>
+@if (objemp == null)
+{
+    <p><em>Cargando.. Espere.!</em></p>
+}else
+{
+
+    <table class="table-borderless">
+
+        <thead>
+            <tr>
+                <th>codDepto</th>
+                <th>Nombre_Empleado</th>
+                <th>nombreDpto</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var items in objemp)
+            {
+                <tr>
+                    <td>@items.codDepto</td>
+                </tr>
+                <tr>
+                    <td>@items.nomEmp</td>
+                </tr>
+                <tr>
+                    <td>@items.codDepto</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+

@@ -1,0 +1,71 @@
+﻿@page "/empleadospage"
+@* @page "/empleadospage/{nDimemp:string}" *@
+@using Data
+<h3>Empleados con relación Departamental</h3>
+ @inject IEmpleadoService empleadoservice 
+
+
+
+<EditForm Model="@objEmp">
+    <div class="form-group">
+        <label for="strInput">ID (Empleado)*:</label>
+        <input type="text" placeholder="ingrese el id" class="form-control" id="strInput" title="Codigo del empleado.." @bind="objEmp.NDimemp" />
+        @* <input type="number"  class="form-control" id="decimalInput" /> *@
+    </div>
+    <div class="form-group">
+        <label for="strInputnom">Nombre del Empleado:</label>
+        <input type="text" placeholder="ingrese el nombre" class="form-control" id="strInputnom"  @bind="objEmp.nomEmp" />
+    </div>
+    <div class="form-group">
+        <label for="strInputsex">Sexo del Empleado:</label>
+        <input type="text" placeholder="M=Masculino / F= Femenino" class="form-control" id="strInputsex" @bind="objEmp.sexEmp" />
+    </div>
+    <div class="form-group">
+        <label for="dateInput">Fecha de Nacimiento:</label>
+        <input type="date" class="form-control" id="dateInput" placeholder="dd/mm/yyyy" @bind="objEmp.FecNac" />
+    </div>
+
+    <div class="form-group">
+        <label for="strInputcomi">Comisi&oacute;n del Empleado:*</label>
+        <input type="number" step="any" class="form-control" id="strInputcomi" @bind="objEmp.comisionE" />
+    </div>
+    <div class="form-group">
+        <label for="strInputcargo">Cargo del Empleado:</label>
+        <input type="text" placeholder="ingrese el cargo." class="form-control" id="strInputcargo" @bind="objEmp.cargoE" />
+    </div>
+    <div class="form-group">
+        <label for="strInputjefe" title="Id del jefe">Jefe del Empleado:</label>
+        <input type="text" placeholder="ingrese el cargo. ID" class="form-control" id="strInputjefe" @bind="objEmp.jefeID" />
+    </div>
+    <div class="form-group">
+        <label for="strInputdpto">Código del Departamento:</label>
+        <input type="text" placeholder="Código del Dpto" class="form-control" id="strInputdpto" @bind="objEmp.codDepto" />
+    </div>
+
+  
+    <div class="form-group">
+        <input type="submit" value="Guardar" onclick="SaveEmpleado" />
+        <input type="button" value="Cancelar" />
+    </div>
+
+ 
+</EditForm>
+
+@code {
+    [Parameter]
+    public string ? nDimemp { get; set; }
+
+    private EmpleadosDTO objEmp = new EmpleadosDTO();
+    // protected override async Task OnInitializedAsync()
+    // {
+    //     if (nDimemp !=null)
+    //     {
+    //      objEmp = await empleadoservice.GetById(nDimemp);
+
+    //     }
+    // }
+    protected async Task SaveEmpleado()
+    {
+        await empleadoservice.SaveEmpleado(objEmp);
+    }
+}
